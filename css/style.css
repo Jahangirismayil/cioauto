@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color: #fff;
+    font: 16px/28px 'Be Vietnam Pro', Arial, Helvetica, sans-serif;
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    
+}
+a{
+    color: inherit;
+    text-decoration: none;
+    transition: .4s;
+}
+ul li{
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+button {
+display: block;
+border: none;
+background-color: transparent;
+font: inherit;
+cursor: pointer;
+transition: .4s;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+#searchInput {
+float: right;
+margin-top: 230px;
+margin-right: 70px;
+}
+
+.section {
+    height: 100vh;
+    padding: 20px;
+}
+
+.section:nth-child(even) {
+    background-color: #f4f4f4;
+}
+
+.title-section {
+ margin: 30px;
+ padding: 50px;
+ margin-bottom: 40px;
+ font-size: 36px;
+ line-height: 64px; 
+ letter-spacing: 0.6px; 
+ text-align: center; 
+ font:'Be Vietnam Pro', Arial, Helvetica, sans-serif;
+}
+
+.btn-rezervasyon {
+  padding: 12px 24px; 
+  background-color: white;
+  color: black; 
+  font-weight: 600;
+  
+}
+
+.btn-rezervasyon:hover {
+font-size: 25px;
+}
+
+.btn-secondary {
+   padding: 12px 24px; 
+   background-color: #fff;
+   color: #000;
+   font-weight: 600;
+   border: 1px solid #000;
+   line-height: 28px;
+   
+}
+.btn-secondary:hover {
+    font-size: 25px;
+}
+
+/* Header */
+#header-section {
+padding: 40px 0 107px;
+}
+.header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+font-weight: 600;
+}
+.header-logo__img {
+ padding-top: auto;
+}
+
+
+
+
+.nav-main {
+margin-left: auto; 
+}
+
+nav.nav-main{
+    top: -60px;
+}
+
+.nav-main1 {
+    padding: 10px;
+    
+}
+.nav-main__list1 {
+    display: flex;  
+    gap: 48px; 
+    margin-right: 72px; 
+    }
+
+    .nav-main__link1:hover {
+        font-size: 30px;
+    }   
+
+    .nav-main__item1{
+        font-size:18px
+    }
+
+
+
+.nav-main__list {
+display: flex;  
+gap: 48px; 
+margin-right: 72px; 
+}
+
+.nav-main__link:hover {
+    font-size: 30px;
+}
+
+/* Banner */
+
+#banner-section {
+position: relative;
+padding-bottom: 60px;
+}
+.banner {
+    max-width: 475px;
+    padding-top: 35px;
+}
+.banner__header {
+font-size: 40px;
+line-height: 64px;
+letter-spacing: 0.6px;
+}
+.banner__text {
+    margin: 32px 0 48px;
+    font-size: 17px;
+    color: rgb(255 255 255 / 80%);
+}
+.banner-links-wrap {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    margin-bottom: 40px;
+}
+.banner-features__text {
+    font-weight: 600;
+    line-height: 24px;
+    font: 16px 'Be Vietnam Pro', Arial, Helvetica, sans-serif;
+}
+
+.banner-features__text:first-child {
+margin-right: 35px;    
+}
+
+.banner-features__text_strong {
+margin-right: 16px;
+font-size: 35px;
+font-weight: 600;   
+line-height: 52px; 
+vertical-align: sub;
+}
+.banner-img {
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    top: 0;
+    right: 0;
+}
+
+.banner-img::before {
+    position: absolute;
+    content: '';
+    z-index: 2;
+    top: 0;
+    right: -25px;
+    width: 61%;
+    height: 100%;
+    background: url('../img/fiategea1.png') no-repeat;
+}
+.banner-img::after {
+    position: absolute;
+    content: '';
+    z-index: 1;
+    top: 0;
+    right: 0;
+    width: 75%;
+    height: 100%;
+    background-color: gray / 30%;
+}
+/* RENT */
+#rent-section {
+    padding: 120px 0;
+}
+.rent-wrap {
+display: grid; 
+grid-template-columns: 1fr 1fr; 
+gap: 32px;  
+}
+.rent {
+    position: relative; 
+    height: 300px;
+    font-weight: 600;
+    background: url('../img/renaultclio2.jpg') 50%/cover no-repeat;
+}
+.rent:hover {
+    font-size: 30px;
+}
+.rent:nth-child(2) {
+    background-image: url('../img/bmw2.jpg');
+}
+.rent:nth-child(3) {
+    background-image: url('../img/bentley1.jpg');  
+}
+.rent:nth-child(4) {
+    background-image: url('../img/vito1.jpg');
+}
+.rent__name {
+position: absolute;
+top: 26px;
+left: 20px;
+font-size: 22px;
+letter-spacing: 0.6px;  
+}
+.rent__link {
+    position: absolute;
+    bottom: 48px;
+    right: 60px;  
+}
+.rent__link ::after {
+    position: absolute;
+    content: ' ';
+    top: 50%;
+    right: 22px;
+    width: 8px;
+    height: 16px;
+    transform: translateY(-50%);
+}
+.paragraf {
+    position: relative;
+  left: 221px;
+font-size: 15px;
+font:'Be Vietnam Pro', Arial, Helvetica, sans-serif;
+margin-left: 90px;
+margin: 50px;
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: flex-start;
+width: 50%;
+overflow: hidden;
+}
+.logo2 {
+   margin: 45px;
+    padding: 20px;
+    width: 400px;
+    height: 400px;
+    float: right;
+    margin-right: 10px;
+}
+.harita {
+float: right;
+margin-right: 60px;
+margin-top: -35px;
+margin-bottom: 20px;
+}
+.contact-links {
+    margin-top: -27px;
+    width: 25px;
+    height: 25px;
+    text-indent: 280px;
+}
+.adress {
+    margin-top: 190px;
+    text-indent: 280px;
+}
+#scrollToTopButton {
+    margin-top: 100px;
+    text-indent: 280px;
+}
+#loading {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    z-index: 9999; /* İçeriğin üzerinde kalmasını sağlar */
+}
+#content {
+    display: none;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px ){
+    .container{
+        width: 100%;
+        padding: 10px;
+    }
+}

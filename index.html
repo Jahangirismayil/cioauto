@@ -1,0 +1,178 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA Compatible" content="IE=edge">
+    <meta name="author" content="cihangir">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent A Car</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/orglogo.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/orglogo.png">
+   
+</head>
+<body>
+
+    <div id="loading">
+        <img src="img/orglogo.png" alt="">
+    </div>
+
+    <div id="content" style="display: none;"></div>
+
+    <p id="update-message"></p>
+    <input type="text" id="searchInput" placeholder="Aramak istediğiniz arabayı girin...">
+    <button onclick="search()"></button>
+    
+    <header id="header-section">
+        <div class="container">
+           <div class="header">
+            <div class="header-logo">
+                <img class="header-logo__img" src="img/orglogo.png" width="320px" height="330px"
+                alt="rentacar logo">
+            </div>
+            <nav id="menu" class="nav-main">
+                <ul class="nav-main__list">
+                   <li class="nav-main__item">
+                    <a class="nav-main__link" href="#">Ana Sayfa</a>
+                   </li> 
+                   <li class="nav-main__item">
+                    <a class="nav-main__link" data-target="Araçlarımız" id="scrollButton" href="#">Araçlarımız</a>
+                   </li> 
+                   <li class="nav-main__item">
+                    <a class="nav-main__link" data-target="Hakkımızda" id="scrollButton2" href="#">Hakkımızda</a>
+                   </li> 
+                   <li class="nav-main__item">
+                    <a class="nav-main__link" data-target="İletişim" id="scrollButton3" href="#">İletişim</a>
+                   </li> 
+                </ul>
+            </nav>
+            <nav class="nav-main1">
+                <ul class="nav-main__list1">
+                    <li class="nav-main__item1">
+                        <a href="contact.html">Contact</a>
+                    </li>
+            </ul>
+        </nav>
+
+            <a class="btn-rezervasyon" href="#">Rezervasyonu Yönet</a>
+           </div> 
+        </div>
+    </header>
+    <main>
+        <section id="banner-section">
+            <div class="container">
+                <div class="banner">
+                    <h2 class="banner__header">Seyahatinizde Size Eşlik Ediyoruz               
+                    </h2>
+                    <p class="banner__text">
+                       Hayallerinizi Yolculuğa Dönüştürün,
+                       Biz size Yardımcı Olalım 
+                    </p>
+                    <div class="banner-links-wrap">
+                        <a href="#" class="btn-rezervasyon banner__link">Şimdi Kirala</a>
+                       <a href="#"><button class="btn-secondary banner__btn">Video Tanımı</button></a>
+                    </div>
+                    <div class="banner-features">
+                       <span class="banner-features__text">
+                        <strong class="banner-features__text_strong">500+</strong>Ekonomik Araçlar
+                    </span>
+                        <span class="banner-features__text">
+                         <strong class="banner-features__text_strong">#1</strong>Benzin Tasarrufu
+                        </span>  
+                    </div>
+                </div>
+            </div>
+            <div class="banner-img"></div>
+        </section>
+        <section id="rent-section">
+            <div class="container">
+                <h2 class="title-section">
+                  Arabalarımız   
+                </h2>
+                <div class="rent-wrap">
+                    <div class="rent">
+                        <span class="rent__name">Ekonomik Arabalar</span>
+                        <a class="rent__link" href="#">Discover</a>
+                    </div>
+                    <div class="rent">
+                        <span class="rent__name">Spor Arabalar</span>
+                        <a class="rent__link" href="#">Discover</a>
+                    </div>
+                    <div class="rent">
+                        <span class="rent__name">Lüks Arabalar</span>
+                        <a class="rent__link" href="#">Discover</a>
+                    </div>
+                    <div class="rent">
+                        <span class="rent__name">Şirket Arabaları</span>
+                        <a class="rent__link" href="#">Discover</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about-section">
+            <div class="container">
+                <h2 class="title-section about-section__title">Hakkımızda</h2>
+            </div>
+            <div class="logo2"><img src="img/logobeyaz.png" style="border-radius: 250px;"></div>
+
+            <div class="paragraf">
+                Kısa dönem araç kiralama sektörüne farklı bir anlayış getirecek olan,
+                 yeni nesil araç kiralama sloganı ile faaliyete geçen Cio Auto, 
+                 Anadolu Grubu’nun tüm şirketleri gibi sektöründe ayrışan,
+                fark yaratan bir anlayışla müşterilerine hizmet vermeyi hedefliyor.
+                <p>
+                  </p>
+            </div>
+            <div class="paragraf"><p>
+                
+                %100 Anadolu Grubu sermayesi ile kurulan Cio Auto,
+                 global bir marka olma vizyonuna sahip 
+                 tek Türk araç kiralama markasıdır. 
+                 Marka, iş veya özel maksatla kiralama yapan müşterilerin,
+                 beklentileri doğrultusunda kurumsallığa sahip ama aynı zamanda da 
+                 kendi ülkelerine ait ve samimi buldukları bir marka beklentileri
+                düşünülerek ortaya çıkarıldı.
+               </p>
+            </div>
+            <div class="paragraf"><p>
+                Cio Auto markasını, diğer global ve kurumsal araç kiralama 
+                şirketlerinden ayrıştıran en önemli özelliği, 
+                tamamen müşterilerinin konforu ve mutluluğu düşünülerek
+                geliştirilen teknolojik altyapısıdır. 
+                
+                  </p>
+            </div>
+            <div class="paragraf"><p>
+                Cio Auto, araç kiralama sürecinin her adımında
+                 güven ve destek sağlıyor. Müşterinin tüm beklentilerini 
+                 göz önünde bulundurarak ürün ve hizmetlerini geliştiren Cio Auto,
+                araç kiralayan müşterinin ihtiyaç duyabileceği her konuda teknolojiyi
+                kullanarak, beklentilerin üzerinde hizmet sunmayı hedefliyor.
+                  </p>
+            </div>
+        </section>
+        <section class="contact-section">
+            <div class="container">
+                <h2 class="title-section about-section__title">İletişim</h2>
+            </div>
+            <div class="harita">
+            <iframe src="https://www.google.com/maps/d/embed?mid=1az95RlZL4ygzTIFse1bMrp9J1lWpulg&ehbc=2E312F&noprof=1" style="width: 700px; height: 480px;"></iframe>
+        </div>
+        <div class="contact-links">
+            <a class="links" href="https://www.instagram.com/cioautoantalya"><ul><li><img src="img/instagram.svg" alt=""></li></ul></a>
+            <a class="links" href="https://www.facebook.com"><ul><li><img src="img/facebook.svg" alt=""></li></ul></a>
+            <a class="links" href="https://x.com"><ul><li><img src="img/twitter.svg" alt=""></li></ul></a>
+        </div>
+        <div class="adress">
+            <p>Adres : Kırşehir, Merkez, Kuşdilli mahallesi 1372.</p>
+            <p>Telefon : +90 544 180 60 03</p>
+            <p>Gmail : cioautoantalya@gmail.com</p>
+        </div>
+        <button id="scrollToTopButton"><img src="img/arrow.svg" style="width: 30px;" height="30px" alt="" ></button>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+ <script src="js/main.js"></script>   
+</body>
+</html>
